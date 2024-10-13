@@ -8,6 +8,10 @@ app.use(bodyParser.json());
 app.use('/script', express.static(__dirname + '/script'));
 app.use('/css', express.static(__dirname + '/css'));
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html'); // กำหนด path ให้ตรงกับไฟล์ของคุณ
+});
+
 let sensorData = {
     distance: '',
     humidity: '',
