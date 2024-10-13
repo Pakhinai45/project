@@ -3,9 +3,9 @@ const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
 
+// ไม่ต้องเปลี่ยนอะไรในส่วนนี้
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/script', express.static(__dirname + '/script'));
 app.use('/css', express.static(__dirname + '/css'));
 
 app.get('/', (req, res) => {
