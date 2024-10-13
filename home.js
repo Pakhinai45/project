@@ -283,6 +283,8 @@ window.addEventListener('click', function(event) {
     }
 });
 
-// เรียกใช้ฟังก์ชัน fetchSensorData ทุกๆ 1 วินาที
-setInterval(fetchSensorData, 1000);
+window.onload = function() {
+    fetchSensorData();
+    setInterval(fetchSensorData, 2000);
+};
 
