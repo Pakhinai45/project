@@ -1,0 +1,154 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00c96e;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo h1 span {
+    color: #000000;
+}
+
+nav a {
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tray-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tray {
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tray h3 {
+    text-align: center;
+}
+
+.water-level {
+    margin: 10px 0;
+}
+
+.water-level .bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.water-level .fill {
+    background-color: #00c0ff;
+    height: 100%;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.control .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.control .status.on {
+    background-color: #4caf50;
+}
+
+.control .status.off {
+    background-color: #f44336;
+}
+
+.toggle {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    background-color: #d32f2f;
+}
+
+.settime{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ระยะห่างระหว่าง <p> และ <button> */
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+
+.editable-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.editable-text {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.edit-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.edit-input {
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none; /* ซ่อนฟิลด์การแก้ไขโดยเริ่มต้น */
+}
+
+
