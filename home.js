@@ -4,7 +4,7 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     const newState = !isOn;
 
     // ส่งค่า true/false ไปยัง server
-    fetch('https://project-2pxk.onrender.com/togglePump', {
+    fetch('/togglePump', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ document.getElementById('toggleButton').addEventListener('click', function() {
 
 // Fetch sensor data and update water level
 function fetchSensorData() {
-    fetch('https://project-2pxk.onrender.com/data')
+    fetch('/data')
         .then(response => response.json())
         .then(data => {
             console.log(data); // ตรวจสอบข้อมูลที่ได้รับจากเซิร์ฟเวอร์
@@ -233,7 +233,7 @@ function loopCycle() {
 
 // ฟังก์ชันสำหรับเปิด/ปิดปั๊มน้ำ
 function togglePump(state) {
-    fetch('https://project-2pxk.onrender.com/togglePump', {
+    fetch('/togglePump', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
