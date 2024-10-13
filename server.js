@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/css', express.static(__dirname + '/css'));
+app.use('/script', express.static(__dirname + '/script'));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html'); // กำหนด path ให้ตรงกับไฟล์ของคุณ
